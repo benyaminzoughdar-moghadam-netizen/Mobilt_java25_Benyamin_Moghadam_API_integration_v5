@@ -12,5 +12,11 @@
         android:text="@string/app_name"
         android:textSize="32sp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/view_forecast" />
 
 </LinearLayout>
