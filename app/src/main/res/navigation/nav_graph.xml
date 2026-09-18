@@ -17,5 +17,16 @@
     <fragment
         android:id="@+id/forecastFragment"
         android:name="com.benyamin.weathertrack.ForecastFragment"
-        android:label="@string/forecast_title" />
+        android:label="@string/forecast_title">
+
+        <action
+            android:id="@+id/action_forecast_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.benyamin.weathertrack.DetailsFragment"
+        android:label="@string/details_title" />
+
 </navigation>
