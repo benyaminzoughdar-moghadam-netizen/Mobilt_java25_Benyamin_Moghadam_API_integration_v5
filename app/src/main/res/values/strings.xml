@@ -4,4 +4,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="view_forecast">View forecast</string>
     <string name="details_title">Weather details</string>
+    <string name="history_title">Search history</string>
 </resources>

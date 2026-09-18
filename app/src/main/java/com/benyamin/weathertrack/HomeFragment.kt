@@ -14,5 +14,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         view.findViewById<Button>(R.id.buttonForecast).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_forecast)
         }
+
+        view.findViewById<Button>(R.id.buttonHistory).setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_history)
+        }
     }
 }

@@ -12,6 +12,10 @@
         <action
             android:id="@+id/action_home_to_forecast"
             app:destination="@id/forecastFragment" />
+
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/historyFragment" />
     </fragment>
 
     <fragment
@@ -28,5 +32,10 @@
         android:id="@+id/detailsFragment"
         android:name="com.benyamin.weathertrack.DetailsFragment"
         android:label="@string/details_title" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.benyamin.weathertrack.HistoryFragment"
+        android:label="@string/history_title" />
 
 </navigation>
