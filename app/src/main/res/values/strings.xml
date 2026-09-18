@@ -5,4 +5,5 @@
     <string name="view_forecast">View forecast</string>
     <string name="details_title">Weather details</string>
     <string name="history_title">Search history</string>
+    <string name="back_to_home">Back to Home</string>
 </resources>
