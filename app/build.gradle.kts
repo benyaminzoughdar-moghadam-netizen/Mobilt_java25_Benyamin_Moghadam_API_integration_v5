@@ -1,11 +1,27 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
+val weatherProperties = Properties().apply {
+    val propertiesFile = rootProject.file("local.properties")
+    if (propertiesFile.exists()) {
+        propertiesFile.inputStream().use { load(it) }
+    }
+}
+
+val weatherApiKey = weatherProperties.getProperty("OPENWEATHER_API_KEY", "")
+
 android {
     namespace = "com.benyamin.weathertrack"
+
     compileSdk {
         version = release(37)
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     defaultConfig {
@@ -16,6 +32,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "OPENWEATHER_API_KEY",
+            "\"$weatherApiKey\""
+        )
     }
 
     buildTypes {
@@ -25,6 +47,7 @@ android {
             }
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -32,6 +55,12 @@ android {
 }
 
 dependencies {
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.11.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.11.0")
+
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

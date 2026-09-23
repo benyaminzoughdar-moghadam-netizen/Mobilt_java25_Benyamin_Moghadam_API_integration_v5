@@ -6,4 +6,15 @@
     <string name="details_title">Weather details</string>
     <string name="history_title">Search history</string>
     <string name="back_to_home">Back to Home</string>
+    <string name="city_hint">City, e.g. Malmö,SE</string>
+    <string name="search_weather">Search weather</string>
+    <string name="weather_placeholder">Search for a city to see its weather.</string>
+    <string name="weather_loading">Loading weather…</string>
+    <string name="weather_enter_city">Enter a city name.</string>
+    <string name="weather_city_not_found">City not found. Check the spelling.</string>
+    <string name="weather_service_error">Weather service access failed.</string>
+    <string name="weather_limit_error">Too many requests. Wait a moment and try again.</string>
+    <string name="weather_network_error">Could not connect. Check your internet connection.</string>
+    <string name="weather_generic_error">Could not load weather. Please try again.</string>
+    <string name="weather_result">%1$s, %2$s\n%3$.1f °C\n%4$s</string>
 </resources>
