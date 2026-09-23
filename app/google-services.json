@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "860228682304",
+    "project_id": "weathertrack-d275f",
+    "storage_bucket": "weathertrack-d275f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860228682304:android:11591391dddeb5f67b55a5",
+        "android_client_info": {
+          "package_name": "com.benyamin.weathertrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH6mNLSMrqrAOr-Aq22ldJ4YEycBMiVC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
