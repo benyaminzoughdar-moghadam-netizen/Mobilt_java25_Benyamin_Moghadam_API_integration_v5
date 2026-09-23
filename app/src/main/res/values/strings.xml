@@ -17,4 +17,18 @@
     <string name="weather_network_error">Could not connect. Check your internet connection.</string>
     <string name="weather_generic_error">Could not load weather. Please try again.</string>
     <string name="weather_result">%1$s, %2$s\n%3$.1f °C\n%4$s</string>
+    <string name="forecast_heading">%1$s, %2$s\n5-day forecast</string>
+    <string name="forecast_timing">Every 3 hours. Times shown for this city.</string>
+    <string name="forecast_loading">Loading forecast…</string>
+    <string name="forecast_no_city">Go back and search for a city first.</string>
+    <string name="forecast_retry">Retry</string>
+    <string name="forecast_entry">%1$s\n%2$.1f °C · %3$s</string>
+    <string name="details_current">Current conditions</string>
+    <string name="details_missing">Not available</string>
+    <string name="details_no_weather">Search for a city on Home first.</string>
+    <string name="details_temperature">%1$.1f °C</string>
+    <string name="details_humidity">%1$d%%</string>
+    <string name="details_wind">%1$.1f m/s</string>
+    <string name="details_pressure">%1$d hPa</string>
+    <string name="details_result">%1$s, %2$s\n%3$s\n\nTemperature: %4$s\nFeels like: %5$s\nHumidity: %6$s\nWind: %7$s\nPressure: %8$s\n\nUpdated: %9$s UTC</string>
 </resources>
