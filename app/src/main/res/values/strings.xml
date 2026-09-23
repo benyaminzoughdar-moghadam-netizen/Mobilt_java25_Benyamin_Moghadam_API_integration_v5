@@ -31,4 +31,10 @@
     <string name="details_wind">%1$.1f m/s</string>
     <string name="details_pressure">%1$d hPa</string>
     <string name="details_result">%1$s, %2$s\n%3$s\n\nTemperature: %4$s\nFeels like: %5$s\nHumidity: %6$s\nWind: %7$s\nPressure: %8$s\n\nUpdated: %9$s UTC</string>
+    <string name="history_loading">Loading search history…</string>
+    <string name="history_empty">No saved searches yet. Search for a city on Home.</string>
+    <string name="history_error">Could not load history. Check your connection, then reopen this screen.</string>
+    <string name="history_pending">Waiting to sync</string>
+    <string name="history_cached">Offline or syncing — showing saved data.\n\n</string>
+    <string name="history_entry">%1$s, %2$s\n%3$.1f °C · %4$s\n%5$s</string>
 </resources>

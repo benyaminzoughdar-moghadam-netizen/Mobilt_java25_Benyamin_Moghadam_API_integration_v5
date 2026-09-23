@@ -3,6 +3,7 @@ package com.benyamin.weathertrack
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.benyamin.weathertrack.data.CityLocation
+import com.benyamin.weathertrack.data.HistoryRepository
 import com.benyamin.weathertrack.data.WeatherClient
 import com.benyamin.weathertrack.data.WeatherResponse
 import java.io.IOException
@@ -51,7 +52,6 @@ class WeatherViewModel : ViewModel() {
 
         searchJob = viewModelScope.launch {
             try {
-                // Find the city's coordinates first.
                 val city = WeatherClient.api
                     .findCity(query, apiKey)
                     .firstOrNull()
@@ -63,7 +63,6 @@ class WeatherViewModel : ViewModel() {
                     return@launch
                 }
 
-                // Fetch weather using those coordinates.
                 val weather = WeatherClient.api.getCurrentWeather(
                     city.lat,
                     city.lon,
@@ -74,16 +73,30 @@ class WeatherViewModel : ViewModel() {
                     city = city,
                     weather = weather
                 )
+
+                // Save this successful search in Firebase.
+                HistoryRepository.save(city, weather)
+                    .addOnFailureListener { error ->
+                        android.util.Log.e(
+                            "WeatherHistory",
+                            "Could not save search",
+                            error
+                        )
+                    }
+
             } catch (error: CancellationException) {
                 throw error
             } catch (error: Exception) {
                 val message = when {
                     error is HttpException && error.code() == 401 ->
                         R.string.weather_service_error
+
                     error is HttpException && error.code() == 429 ->
                         R.string.weather_limit_error
+
                     error is IOException ->
                         R.string.weather_network_error
+
                     else ->
                         R.string.weather_generic_error
                 }
