@@ -37,4 +37,9 @@
     <string name="history_pending">Waiting to sync</string>
     <string name="history_cached">Offline or syncing — showing saved data.\n\n</string>
     <string name="history_entry">%1$s, %2$s\n%3$.1f °C · %4$s\n%5$s</string>
+    <string name="notify_weather">Show weather notification</string>
+    <string name="weather_channel">Weather updates</string>
+    <string name="notification_title">Weather in %1$s, %2$s</string>
+    <string name="notification_body">%1$.1f °C · %2$s</string>
+    <string name="notifications_disabled">Allow notifications in your phone settings to use this feature.</string>
 </resources>
