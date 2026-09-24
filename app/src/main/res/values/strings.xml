@@ -42,4 +42,13 @@
     <string name="notification_title">Weather in %1$s, %2$s</string>
     <string name="notification_body">%1$.1f °C · %2$s</string>
     <string name="notifications_disabled">Allow notifications in your phone settings to use this feature.</string>
+    <string name="air_title">Air quality</string>
+    <string name="air_loading">Loading air quality…</string>
+    <string name="air_error">Could not load air quality. Tap Retry.</string>
+    <string name="air_no_city">Search for a city on Home first.</string>
+    <string name="air_retry">Retry air quality</string>
+    <string name="air_result">European AQI: %1$s\nPM2.5: %2$s\nPM10: %3$s\n\nModel time: %4$s UTC</string>
+    <string name="air_number">%1$.1f</string>
+    <string name="air_particles">%1$.1f µg/m³</string>
+    <string name="air_source">Model estimates. Lower AQI means cleaner air.\nSources: Open-Meteo and CAMS.\nhttps://open-meteo.com/\nhttps://atmosphere.copernicus.eu/</string>
 </resources>

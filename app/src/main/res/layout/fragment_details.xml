@@ -32,6 +32,13 @@
             android:lineSpacingExtra="6dp"
             android:textSize="20sp" />
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/airQualityContainer"
+            android:name="com.benyamin.weathertrack.AirQualityFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
         <Button
             android:id="@+id/buttonNotifyWeather"
             android:layout_width="match_parent"
