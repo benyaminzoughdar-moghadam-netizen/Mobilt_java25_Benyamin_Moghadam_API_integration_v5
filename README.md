@@ -24,3 +24,13 @@ WeatherTrack is an Android weather app written in Kotlin.
 
    ```properties
    OPENWEATHER_API_KEY=your_api_key_here
+
+## Screenshots
+
+| Home | Forecast |
+| --- | --- |
+| ![Home screen](screenshots/home.png) | ![Forecast screen](screenshots/forecast.png) |
+
+| Details | Search history |
+| --- | --- |
+| ![Weather details](screenshots/details.png) | ![Search history](screenshots/history.png) |
